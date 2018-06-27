@@ -34,7 +34,7 @@
     <script src="js/main.js"></script>
     <script src="js/jquery.js"></script>
     
-    <!-- Ajax Script -->
+    <!-- Process Script -->
    	<script src="js/ajax_cart.js"></script>
   	<script src="js/jquery-ui.js"></script>
     
