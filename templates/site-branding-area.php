@@ -11,7 +11,7 @@
                 
                 <div class="col-sm-4">
                     <div class="shopping-item">
-                        <a href="gio_hang.php">Giỏ hàng - <span class="cart-amunt"><?php echo isset($_SESSION["cart"])?number_format($_SESSION["cart"]):0?> ₫</span> <i class="fa fa-shopping-cart"></i> <span class="product-count"><?php echo isset($_SESSION["count"])?$_SESSION["count"]:0?></span></a>
+                        <a href="cart.php">Giỏ hàng - <span class="cart-amunt"><?php echo isset($_SESSION["cart"])?number_format($_SESSION["cart"]):0?> ₫</span> <i class="fa fa-shopping-cart"></i> <span class="product-count"><?php echo isset($_SESSION["count"])?$_SESSION["count"]:0?></span></a>
                     </div>
                 </div>
             </div>

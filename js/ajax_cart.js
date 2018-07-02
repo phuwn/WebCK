@@ -40,7 +40,7 @@ $(document).ready(function() {
 	    }
 	
 	var data1=new FormData();
-	data1.append("id_sp",t);
+	data1.append("id_sp",txt);
 	xmlhttp.send(data1);
     }
   );
@@ -48,11 +48,10 @@ $(document).ready(function() {
   $("button.plus").click(
     function() {
       var $temp = $(this).attr("id");
-      var txt1 = $temp.replace("y","");
-      var str=$("#quantitynum").val();
-      alert(str);
+      var $txt1 = $temp.replace("y","");
+      var str=$("#quantity"+$txt1).val();
       var temp_data = {
-        id: $temp,
+        id: $txt1,
         soluong: str,
       };
 
@@ -64,8 +63,35 @@ $(document).ready(function() {
         success: function(data) {
           $("span.cart-amunt").html(data[0] + "₫");
           $("span.product-count").html(data[1]);
+          $("#sum"+$txt1).html(data[2] + "đ");
         },
         error: function(error) {
+        }
+      });
+      return false;
+    }
+  );
+
+  $("button.voucheradd").click(
+    function() {
+      $voucher_code=$("input.vouchercode").val();
+      var voucher_data = {
+        voucher_code: $voucher_code,
+      };
+
+      $.ajax({
+        url: "process/checkVoucher.php",
+        type: "POST",
+        data: voucher_data,
+        dataType: "json",
+        success: function(data) {
+          // $("span.cart-amunt").html(data[0] + "₫");
+          // $("span.product-count").html(data[1]);
+          // $("#sum"+$txt1).html(data[2] + "đ");
+          alert("a");
+        },
+        error: function(error) {
+          alert($voucher_code);
         }
       });
       return false;

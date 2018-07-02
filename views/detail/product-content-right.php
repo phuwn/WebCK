@@ -38,64 +38,51 @@
                                     </div>
 
 
-                                         <h3 role="presentation">Đánh giá</h3>
-                    
-                                        
+
+
+
 
                                         <!--Nội dung Đánh giá -->
-                                                <div class="submit-review">
-                                                    <p><label for="name">Họ tên</label> <input name="name" type="text"></p>
-                                                    <p><label for="email">Email</label> <input name="email" type="email"></p>
-                                                    <div class="rating-chooser">
-                                                        <p>Bỏ phiếu</p>
 
-                                                        <div class="rating-wrap-post">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </div>
-                                                    </div>
-                                                    <p><label for="review">Nội dung đánh giá</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
-                                                    <p><input type="submit" value="Gửi"></p>
-                                                </div>
-                                            </div>
                                             </div>
                                     </div>
 
                                 </div>
                             </div>
+                            <div class="submit-review">
+                            <h3 role="presentation">Đánh giá</h3>
+                                                <div class="fb-comments" data-href="http://localhost:81/WebCK/detail.php?id_sp=<?php echo $san_pham->id_sp;?>" data-numposts="5"></div>
+                                                </div>
+                                            </div>
                         </div>
 
 
                         <div class="related-products-wrapper">
                             <h2 class="related-products-title">Sản phẩm Khác</h2>
                             <div class="related-products-carousel">
-                            <?php 
-							foreach($san_pham_khac as $sp_khac)
-							{
-							?>
+                            <?php
+foreach ($san_pham_khac as $sp_khac) {
+    ?>
                                 <div class="single-product">
                                     <div class="product-f-image">
-                                        <img src="img/<?php echo $sp_khac->hinh;?>" alt="">
+                                        <img src="img/<?php echo $sp_khac->hinh; ?>" alt="">
                                         <div class="product-hover">
                                         <input type="hidden" id="soluong<?php echo $sp_khac->id_sp; ?>" value="1" />
-                                        <input type="hidden" id="dongia<?php echo $sp_khac->id_sp;?>" value="<?php echo $sp_khac->don_gia;?>" />
-                                            <a href="" class="add-to-cart-link" id="<?php echo $sp_khac->id_sp?>"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
-                                            <a href="detail.php?id_sp=<?php echo $sp_khac->id_sp;?>" class="view-details-link"><i class="fa fa-link"></i> Xem chi tiết</a>
+                                        <input type="hidden" id="dongia<?php echo $sp_khac->id_sp; ?>" value="<?php echo $sp_khac->don_gia; ?>" />
+                                            <a href="" class="add-to-cart-link" id="<?php echo $sp_khac->id_sp ?>"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                            <a href="detail.php?id_sp=<?php echo $sp_khac->id_sp; ?>" class="view-details-link"><i class="fa fa-link"></i> Xem chi tiết</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="detail.php?id_sp=<?php echo $sp_khac->id_sp;?>"><?php echo $sp_khac->ten_sp;?></a></h2>
+                                    <h2><a href="detail.php?id_sp=<?php echo $sp_khac->id_sp; ?>"><?php echo $sp_khac->ten_sp; ?></a></h2>
 
                                     <div class="product-carousel-price">
-                                        <ins><?php echo number_format($sp_khac->don_gia)." ";?>₫</ins> 
-                                    </div> 
+                                        <ins><?php echo number_format($sp_khac->don_gia) . " "; ?>₫</ins>
+                                    </div>
                                 </div>
                             <?php
-							}
-							?>                                       
+}
+?>
                             </div>
                         </div>
                     </div>
