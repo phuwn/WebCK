@@ -2,16 +2,15 @@
 	
     <h3 class="sidebar-title">Danh mục sản phẩm</h3>
     <hr />
-    <?php if(isset($loai_san_pham)){
+    <?php if(isset($loai)){
         ?>
     <ul class="list-group">
         <a href="product.php" class="list-group-item">Tất cả sản phẩm</a>
         <?php 
         foreach($allloai as $loaisp){
-            if($loaisp == $loai_san_pham){
+            if($loaisp == $loai){
             ?>
-            <a href="product.php?loai=<?php echo $loaisp->id_loai?>" class="list-group-item"><?php echo $loaisp->ten_loai?></a>
-            <p class="list-group-item"style="text-align: center"><?php echo $san_pham->ten_sp?></p>
+            <p class="list-group-item active"><?php echo $loaisp->ten_loai?></p>
             <?php
         }
         else{

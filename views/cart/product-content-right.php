@@ -67,14 +67,7 @@ foreach ($_SESSION["damua"] as $id_sp) {
                             </form>
                             
                                 <div class="cart-collaterals">
-                                    <div class="cross-sells">
-                                        <h2>Voucher giảm giá</h2>
-                                        
-                                                <h4>Nhập mã voucher</h4>
-                                                <input value="" class="vouchercode" >
-                                                <button class="voucheradd">Áp dụng voucher</button>
-                                           
-                                    </div>
+                                    
 
                                 <div class="cart_totals ">
                                     <h2>Tổng đơn hàng</h2>
@@ -89,20 +82,8 @@ foreach ($_SESSION["damua"] as $id_sp) {
                                                 </td>
                                             </tr>
 
-                                            <?php isset($_SESSION["discount"])? $discount="- "+$_SESSION["discount"]+" đ":$discount="0 đ";?>
-                                            <tr class="shipping">
-                                                <th>Giảm giá </th>
-                                                <td><?php echo $discount ?></td>
-                                            </tr>
 
-                                            <?php isset($_SESSION["discount"])?($_SESSION["totalfinal"]=$_SESSION["cart"]-$_SESSION["discount"]):($_SESSION["totalfinal"]=$_SESSION["cart"]);?>
-                                            <tr class="order-total">
-                                                <th>Tổng tiền</th>
-                                                <td>
-                                                    <strong>
-                                                        <span class="amount"><?php echo number_format($_SESSION["totalfinal"]); ?> đ</span>
-                                                    </strong>
-                                                </td>
+                                                
                                             </tr>
                                         </tbody>
                                     </table>

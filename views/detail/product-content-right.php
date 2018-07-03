@@ -3,7 +3,7 @@
                         <div class="product-breadcroumb">
                             <ul class="breadcrumb">
                                 <li><a href=".">Trang Chủ</a></li>
-                                <li><a href="san_pham.php?ma_loai=<?php echo $loai_san_pham->id_loai; ?>"><?php echo $loai_san_pham->ten_loai; ?></a></li>
+                                <li><a href="san_pham.php?loai=<?php echo $loai_san_pham->id_loai; ?>"><?php echo $loai_san_pham->ten_loai; ?></a></li>
                                 <li class="active"><?php echo $san_pham->ten_sp; ?></li>
                             </ul>
                         </div>
@@ -51,7 +51,7 @@
                             </div>
                             <div class="submit-review">
                             <h3 role="presentation">Đánh giá</h3>
-                                                <div class="fb-comments" data-href="http://localhost:81/WebCK/detail.php?id_sp=<?php echo $san_pham->id_sp;?>" data-numposts="5"></div>
+                                                <div class="fb-comments" data-href="phuwn29.000webhostapp.com/detail.php?id_sp=<?php echo $san_pham->id_sp;?>" data-numposts="5"></div>
                                                 </div>
                                             </div>
                         </div>

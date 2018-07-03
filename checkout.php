@@ -10,6 +10,6 @@ $arrtensp = array();
 foreach($ds_sp as $sp){
     $arrtensp[]=$sp->ten_sp;
 }
-$view="views/cart/vCart.php";
+$view="views/checkout/vCheckout.php";
 include("templates/layout.php");	
 ?>

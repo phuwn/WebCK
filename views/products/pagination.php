@@ -1,26 +1,28 @@
 <div class="row">
                 <div class="col-md-12">
                     <div class="product-pagination text-center">
-                        <!--<nav>
+                        <nav>
                           <ul class="pagination">
                             <li>
                               <a href="#" aria-label="Previous">
                                 <span aria-hidden="true">&laquo;</span>
                               </a>
                             </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
+                            <?php for($x=1; $x<= $pagecount;$x++){
+                              ?>
+                            <li><a href="product.php?page=<?php echo $x ?><?php if(isset($searchlist)) {?>&search=<?php echo $_GET["search"];
+                            }?>"><?php echo $x; ?></a></li>
+                            <?php
+                            }
+                            ?>
                             <li>
                               <a href="#" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
                               </a>
                             </li>
                           </ul>
-                        </nav> -->
-                        <?php echo $phan_trang;?> 
+                        </nav>
+                         
                     </div>
                 </div>
                 
