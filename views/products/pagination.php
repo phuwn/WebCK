@@ -11,6 +11,7 @@
                             <?php for($x=1; $x<= $pagecount;$x++){
                               ?>
                             <li><a href="product.php?page=<?php echo $x ?><?php if(isset($searchlist)) {?>&search=<?php echo $_GET["search"];
+                            }?><?php if(isset($loai)) {?>&search=<?php echo $_GET["loai"];
                             }?>"><?php echo $x; ?></a></li>
                             <?php
                             }
