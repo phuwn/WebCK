@@ -49,7 +49,7 @@
         
         <!-- Modal body -->
         <div class="modal-body">
-        	<form action="dang_ky.php" method="post">
+        	<form action="dang_ki.php" method="post">
          	<div class="form-group">
               <label for="email_dang_ky">Email:</label>
               <input type="email" class="form-control" id="email-dang_ky" name="email_dang_ky"/>

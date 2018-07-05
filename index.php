@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 include("process/xemSanPham.php");
 $pmodel=new pModel();
 $ds_sp_noi_bat=$pmodel->Xem_tat_ca(2,8);
