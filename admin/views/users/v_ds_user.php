@@ -36,7 +36,7 @@
                     <td><?php echo $user['email']?></td>
                     <td><?php echo $user['dia_chi']?></td>
                     <td><?php echo $user['so_dien_thoai']?></td>
-                    <td><?php echo $user['role']==1?"Quản Lý":"Nhân Viên"?></td>
+                    <td><?php echo $user['role']==1?"Quản Lý":"Khách Hàng"?></td>
                     <td>
                       <div class="btn-group">
                         

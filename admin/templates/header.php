@@ -29,14 +29,14 @@
                             <span class="profile-ava">
                                 <img alt="" src="layout/img/avatar1_small.jpg">
                             </span>
-                            <span class="username">Chào, Admin</span>
+                            <span class="username">Chào,<?php echo $_SESSION['admin']['ho_ten']?></span>
                             <b class="caret"></b>
                         </a>
             <ul class="dropdown-menu extended logout">
               <div class="log-arrow-up"></div>
               
               <li>
-                <a href="login.html"><i class="icon_key_alt"></i> Đăng Xuất</a>
+                <a href="dang_xuat_admin.php"><i class="icon_key_alt"></i> Đăng Xuất</a>
               </li>
               
             </ul>
