@@ -11,7 +11,7 @@
             if($loaisp == $loai_san_pham){
             ?>
             <a href="product.php?loai=<?php echo $loaisp->id_loai?>" class="list-group-item"><?php echo $loaisp->ten_loai?></a>
-            <p class="list-group-item"style="text-align: center"><?php echo $san_pham->ten_sp?></p>
+            <p class="list-group-item active"style="text-align: center"><?php echo $san_pham->ten_sp?></p>
             <?php
         }
         else{

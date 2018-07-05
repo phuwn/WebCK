@@ -18,7 +18,7 @@
 
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                <a href="sanpham.php">
+                <a href="product.php?loai=1">
                     <div class="single-slide">
                         <div class="slide-bg slide-one"></div>
                         <div class="slide-text-wrapper">
@@ -36,7 +36,7 @@
                     </a>
                 </div>
                 <div class="item">
-                <a href="sanpham.php">
+                <a href="product.php?loai=2">
                     <div class="single-slide">
                         <div class="slide-bg slide-two"></div>
                         <div class="slide-text-wrapper">
@@ -58,7 +58,7 @@
                     </a>
                 </div>
                 <div class="item">
-                <a href="sanpham.php">
+                <a href="product.php?loai=4">
                     <div class="single-slide">
                         <div class="slide-bg slide-three"></div>
                         <div class="slide-text-wrapper">
@@ -81,7 +81,7 @@
                     </a>
                 </div>
                 <div class="item">
-                <a href="sanpham.php">
+                <a href="product.php?loai=3">
                     <div class="single-slide">
                         <div class="slide-bg slide-four"></div>
                         <div class="slide-text-wrapper">

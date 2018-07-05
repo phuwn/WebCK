@@ -1,9 +1,9 @@
 <?php
 include("head.php");
-include("header-area.php"); //dangnhap
+include("header-area.php"); 
 include("site-branding-area.php"); 
 include("mainmenu.php");//dropdown menu
-include("content.php"); //form dang nhap , chinh sach doi tra
+include("content.php");  
 include("footer-top.php");//danhmuc , 
 include("footer-bottom.php");
 ?>

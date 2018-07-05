@@ -23,7 +23,7 @@
                 $sql = "INSERT INTO ct_don_hang values($last_id, $id_sp, $soluong)";
                 $conn->query($sql);
             }
-            $mail = Mailer::  Gui_lien_he('Thanh toán giỏ hàng của bạn tại noithatpkc',"Chào $name  <br> Cảm ơn bạn đã tham quan và mua hàng tại Nội thất PKC. <br> Vui lòng chuyển khoản số tiền cần thanh toán vào stk: <br>Ngân hàng Techcombank chi nhánh sài gòn <br>Stk: 19032071931013 <br>Tên tài khoản: Trần Thanh Phương <br> Xem lại giỏ hàng của bạn tại <br> http://www.noithatpkc.tk/cartinfo.php?donhang=$id_donhang <br> Sau khi chuyển khoản bạn sẽ nhận được email xác nhận của tiếp viên <br> Chúc bạn một ngày tốt lành.","$email");
+            $mail = Mailer::  Gui_lien_he("Thanh toán đơn hàng $id_donhang của bạn tại noithatpkc","Chào $name  <br> Cảm ơn bạn đã tham quan và mua hàng tại Nội thất PKC. <br> Vui lòng chuyển khoản số tiền cần thanh toán vào stk: <br>Ngân hàng Techcombank chi nhánh sài gòn <br>Stk: 19032071931013 <br>Tên tài khoản: Trần Thanh Phương <br> Xem lại giỏ hàng của bạn tại <br> http://www.noithatpkc.tk/cartinfo.php?donhang=$id_donhang <br> Sau khi chuyển khoản bạn sẽ nhận được email xác nhận của tiếp viên <br> Chúc bạn một ngày tốt lành.","$email");
             unset($_SESSION["damua"]);
             unset($_SESSION["soluong"]);
             unset($_SESSION["cart"]);
