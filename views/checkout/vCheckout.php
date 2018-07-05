@@ -3,13 +3,12 @@
  ?>
  <div class="single-product-area">
         <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-            
-            <?php include "single-sidebar.php"?>
-            <?php include "checkoutform.php"?>
-                            </div>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <?php include("checkoutform.php")?>
+                    <?php include("cartleak.php")?>
+
+
                     </div>
 
                 </div>

@@ -51,7 +51,7 @@
                             </div>
                             <div class="submit-review">
                             <h3 role="presentation">Đánh giá</h3>
-                                                <div class="fb-comments" data-href="phuwn29.000webhostapp.com/detail.php?id_sp=<?php echo $san_pham->id_sp;?>" data-numposts="5"></div>
+                                                <div class="fb-comments" data-href="http://www.noithatpkc.tk/detail.php?id_sp=<?php echo $san_pham->id_sp;?>" data-numposts="5"></div>
                                                 </div>
                                             </div>
                         </div>
