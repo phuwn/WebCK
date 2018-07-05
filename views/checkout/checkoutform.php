@@ -5,12 +5,11 @@
     <div class="col-1">
       <div class="woocommerce-billing-fields">
         <h3>Thông tin giao hàng</h3>
-        <p id="billing_country_field" class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated">
-          <!--<label class="" for="billing_country">Country <abbr title="required" class="required">*</abbr> </label>-->
+        <form action="process/thanhToan.php" method="post">
         
         <p id="billing_first_name_field" class="form-row form-row-first validate-required">
           <!--<label class="" for="billing_first_name">First Name <abbr title="required" class="required">*</abbr> </label>-->
-          <input type="text" value="" placeholder="Họ và tên" id="billing_first_name" name="billing_first_name" class="input-text ">
+          <input type="text" value="" placeholder="Họ và tên" id="billing_first_name" name="billing_name" class="input-text ">
         </p>
         
         <div class="clear"></div>
@@ -25,17 +24,15 @@
         <div class="clear"></div>
         <p id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
           <!--<label class="" for="billing_address_1">Address <abbr title="required" class="required">*</abbr> </label>-->
-          <input type="text" value="" placeholder="Địa chỉ" id="billing_address_1" name="billing_address_1" class="input-text ">
+          <input type="text" value="" placeholder="Địa chỉ" id="billing_address_1" name="billing_address" class="input-text ">
         </p>
-        
-          <select class="country_to_state country_select" id="tinh_thanh" name="billing_country" onchange="Xl_ajax_tinh_thanh(this.value)" >
-            <option value="null" selected="">Vui lòng chọn tỉnh/thành phố.</option>
-
-          </select>
           
          <p id="order_comments_field" class="form-row notes">
                       <textarea cols="5" rows="2" placeholder="Ghi chú đơn hàng" id="order_comments" class="input-text " name="order_comments"></textarea>
                     </p> 
+          
+          <button type="submit" name="btn_thanhtoan">Gửi</button>
+      </form>
       </div>
     </div>
         </div>
