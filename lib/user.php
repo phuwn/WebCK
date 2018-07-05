@@ -32,6 +32,16 @@ class User
 		if($result) return mysqli_fetch_all($result,MYSQLI_ASSOC);
 		return 0;
 	}
+
+	public function Check_admin($email,$pass,$role=1)
+	{
+		$sql="SELECT * FROM user ";
+		$sql.="WHERE email='$email' AND password='$pass' AND role='$role'"; 
+		
+		$result=mysqli_query($this->conn,$sql);
+		if($result) return mysqli_fetch_all($result,MYSQLI_ASSOC);
+		return 0;
+	}
 	
 	
 	//Đọc tất cả user đang có trong database
