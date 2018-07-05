@@ -15,8 +15,8 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
             <ul class="sub">
-              <li><a class="" href="form_component.html">Thêm Tài Khoản</a></li>
-              <li><a class="" href="form_validation.html">Xem Danh Sách</a></li>
+              <li><a class="" href="them_user.php">Thêm Tài Khoản</a></li>
+              <li><a class="" href="ds_user.php">Xem Danh Sách</a></li>
             </ul>
           </li>
           <li class="sub-menu">

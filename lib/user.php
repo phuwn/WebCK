@@ -67,6 +67,14 @@ class User
 		return 0;	
 	}
 	
+	public function Xoa_user($id)
+	{
+		$sql="DELETE FROM user WHERE id='$id'";
+		$result=mysqli_query($this->conn,$sql);
+		if($result) return 1;
+		return 0;	
+	}
+	
 		
 }
 
