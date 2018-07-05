@@ -5,10 +5,10 @@
                     <div class="user-menu">
                         <ul>
                             <li><a href="#"><i class="fa fa-phone"></i> 099999999</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i> hello@pkcmail.com</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>noithatpkc@gmail.com</a></li>
                             <!-- <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li> -->
-                            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
-                            <li><a href="checkout.html"><i class="fa fa-credit-card"></i> Thanh toán</a></li>
+                            <li><a href="cart.php"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+                            <li><a href="checkout.php"><i class="fa fa-credit-card"></i> Thanh toán</a></li>
                             <!-- tài khoản -->
                             <?php
                             if(isset($_SESSION['user']['ho_ten']))

@@ -58,8 +58,8 @@ foreach ($_SESSION["damua"] as $id_sp) {
     ?>
                                         <tr>
                                             <td class="actions" colspan="6">
-                                                <input type="submit" value="CẬP NHẬT GIỎ HÀNG" name="update_cart" class="button" id="update" onclick="">
-                                                <input type="submit" value="XÁC NHẬN THANH TOÁN" name="proceed" class="checkout-button button alt wc-forward">
+                                                
+                                                <input type="submit" value="XÁC NHẬN THANH TOÁN" name="proceed" class="checkout-button button alt wc-forward" formaction="checkout.php">
                                             </td>
                                         </tr>
                                     </tbody>
